@@ -47,12 +47,12 @@ struct ConversionRule {
 class ConversionRules {
     static let shared = ConversionRules()
 
-    // Default CC numbers
-    private(set) var ccStart: UInt8 = 80
-    private(set) var ccStop: UInt8 = 80
-    private(set) var ccSongPosition: UInt8 = 82
-    private(set) var ccNextMarker: UInt8 = 83
-    private(set) var ccPrevMarker: UInt8 = 84
+    // Default CC numbers (public for Settings UI)
+    var ccStart: UInt8 = 80
+    var ccStop: UInt8 = 80
+    var ccSongPosition: UInt8 = 82
+    var ccNextMarker: UInt8 = 83
+    var ccPrevMarker: UInt8 = 84
 
     var defaultChannel: UInt8 = 0
 
