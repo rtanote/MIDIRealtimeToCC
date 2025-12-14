@@ -71,12 +71,8 @@ struct MenuBarView: View {
             Divider()
 
             // Settings Button
-            Button("Settings...") {
-                if #available(macOS 14, *) {
-                    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
-                } else {
-                    NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
-                }
+            SettingsLink {
+                Text("Settings...")
             }
 
             // Quit Button

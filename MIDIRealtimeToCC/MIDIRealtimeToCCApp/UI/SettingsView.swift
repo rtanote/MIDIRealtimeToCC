@@ -34,6 +34,14 @@ struct SettingsView: View {
                 LabeledContent("Previous Marker (CC)") {
                     CCNumberField(value: $ccPrevMarker)
                 }
+
+                HStack {
+                    Spacer()
+                    Button("Reset to Defaults") {
+                        resetToDefaults()
+                    }
+                    .buttonStyle(.bordered)
+                }
             }
 
             Section {
@@ -78,6 +86,14 @@ struct SettingsView: View {
         .onChange(of: ccPrevMarker) { _, newValue in
             ConversionRules.shared.ccPrevMarker = UInt8(newValue)
         }
+    }
+
+    private func resetToDefaults() {
+        ccStart = 80
+        ccStop = 80
+        ccSongPosition = 82
+        ccNextMarker = 83
+        ccPrevMarker = 84
     }
 
     private func setLaunchAtLogin(enabled: Bool) {
