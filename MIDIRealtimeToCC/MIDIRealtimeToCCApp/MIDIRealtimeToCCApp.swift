@@ -5,7 +5,7 @@ struct MIDIRealtimeToCCApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
-        MenuBarExtra("MIDI Converter", systemImage: "music.note") {
+        MenuBarExtra("MIDI Converter", image: "MenuBarIcon") {
             MenuBarView()
         }
         .menuBarExtraStyle(.window)
