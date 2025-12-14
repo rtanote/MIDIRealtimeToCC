@@ -20,12 +20,38 @@
 
 /* Begin PBXFileReference section */
 		8A43BC2A2EEE9020003EF452 /* MIDIRealtimeToCC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MIDIRealtimeToCC; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A43BCA62EEEB41B003EF452 /* MIDIRealtimeToCCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIDIRealtimeToCCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8A43BCCC2EEEB4D0003EF452 /* Exceptions for "Core" folder in "MIDIRealtimeToCCApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ConversionRules.swift,
+				MessageProcessor.swift,
+				MIDIManager.swift,
+			);
+			target = 8A43BCA52EEEB41B003EF452 /* MIDIRealtimeToCCApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8A43BC2C2EEE9020003EF452 /* MIDIRealtimeToCC */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MIDIRealtimeToCC;
+			sourceTree = "<group>";
+		};
+		8A43BCA72EEEB41B003EF452 /* MIDIRealtimeToCCApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MIDIRealtimeToCCApp;
+			sourceTree = "<group>";
+		};
+		8A43BCC42EEEB4BE003EF452 /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8A43BCCC2EEEB4D0003EF452 /* Exceptions for "Core" folder in "MIDIRealtimeToCCApp" target */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,13 +64,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A43BCA32EEEB41B003EF452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8A43BC212EEE9020003EF452 = {
 			isa = PBXGroup;
 			children = (
+				8A43BCC42EEEB4BE003EF452 /* Core */,
 				8A43BC2C2EEE9020003EF452 /* MIDIRealtimeToCC */,
+				8A43BCA72EEEB41B003EF452 /* MIDIRealtimeToCCApp */,
 				8A43BC2B2EEE9020003EF452 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				8A43BC2A2EEE9020003EF452 /* MIDIRealtimeToCC */,
+				8A43BCA62EEEB41B003EF452 /* MIDIRealtimeToCCApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +110,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8A43BC2C2EEE9020003EF452 /* MIDIRealtimeToCC */,
+				8A43BCC42EEEB4BE003EF452 /* Core */,
 			);
 			name = MIDIRealtimeToCC;
 			packageProductDependencies = (
@@ -81,6 +118,28 @@
 			productName = MIDIRealtimeToCC;
 			productReference = 8A43BC2A2EEE9020003EF452 /* MIDIRealtimeToCC */;
 			productType = "com.apple.product-type.tool";
+		};
+		8A43BCA52EEEB41B003EF452 /* MIDIRealtimeToCCApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A43BCAE2EEEB41D003EF452 /* Build configuration list for PBXNativeTarget "MIDIRealtimeToCCApp" */;
+			buildPhases = (
+				8A43BCA22EEEB41B003EF452 /* Sources */,
+				8A43BCA32EEEB41B003EF452 /* Frameworks */,
+				8A43BCA42EEEB41B003EF452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8A43BCA72EEEB41B003EF452 /* MIDIRealtimeToCCApp */,
+			);
+			name = MIDIRealtimeToCCApp;
+			packageProductDependencies = (
+			);
+			productName = MIDIRealtimeToCCApp;
+			productReference = 8A43BCA62EEEB41B003EF452 /* MIDIRealtimeToCCApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,6 +152,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					8A43BC292EEE9020003EF452 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					8A43BCA52EEEB41B003EF452 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -112,12 +174,30 @@
 			projectRoot = "";
 			targets = (
 				8A43BC292EEE9020003EF452 /* MIDIRealtimeToCC */,
+				8A43BCA52EEEB41B003EF452 /* MIDIRealtimeToCCApp */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8A43BCA42EEEB41B003EF452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A43BC262EEE9020003EF452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A43BCA22EEEB41B003EF452 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,6 +353,72 @@
 			};
 			name = Release;
 		};
+		8A43BCAF2EEEB41D003EF452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8L42D975L;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bakedware.MIDIRealtimeToCCApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A43BCB02EEEB41D003EF452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8L42D975L;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.bakedware.MIDIRealtimeToCCApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +436,15 @@
 			buildConfigurations = (
 				8A43BC322EEE9020003EF452 /* Debug */,
 				8A43BC332EEE9020003EF452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A43BCAE2EEEB41D003EF452 /* Build configuration list for PBXNativeTarget "MIDIRealtimeToCCApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A43BCAF2EEEB41D003EF452 /* Debug */,
+				8A43BCB02EEEB41D003EF452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

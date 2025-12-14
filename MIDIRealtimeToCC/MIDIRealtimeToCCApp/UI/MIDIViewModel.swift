@@ -103,7 +103,8 @@ class MIDIViewModel: ObservableObject {
     }
 
     private func updateDeviceList() {
-        let (inputs, outputs) = midiManager.listDevices()
+        let inputs = midiManager.getInputDevices().map { $0.displayName }
+        let outputs = midiManager.getOutputDevices().map { $0.displayName }
 
         DispatchQueue.main.async { [weak self] in
             self?.inputDevices = inputs
@@ -119,8 +120,8 @@ class MIDIViewModel: ObservableObject {
         }
 
         do {
-            try midiManager.connectToInput(name: inputName)
-            try midiManager.connectToOutput(name: outputName)
+            try midiManager.connectInput(deviceName: inputName)
+            try midiManager.connectOutput(deviceName: outputName)
             isConnected = true
         } catch {
             print("Connection error: \(error)")

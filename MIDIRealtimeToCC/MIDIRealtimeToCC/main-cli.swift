@@ -149,10 +149,14 @@ class Application {
 
 // MARK: - Entry Point
 
+@main
+struct MIDIRealtimeToCCCLI {
+    static func main() {
+        let app = Application()
+        sharedApp = app
+        app.run()
+    }
+}
+
 // Global reference for signal handler
 var sharedApp: Application?
-
-// Create and run application
-let app = Application()
-sharedApp = app
-app.run()
